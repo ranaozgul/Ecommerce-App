@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/anaFragment">
+
+    <fragment
+        android:id="@+id/kategoriFragment"
+        android:name="com.example.eticaretuyg.KategoriFragment"
+        android:label="fragment_kategori"
+        tools:layout="@layout/fragment_kategori" >
+        <action
+            android:id="@+id/action_kategoriFragment_to_urunFragment2"
+            app:destination="@id/urunFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/anaFragment"
+        android:name="com.example.eticaretuyg.anaFragment"
+        android:label="Ana Sayfa"
+        tools:layout="@layout/fragment_ana" >
+        <action
+            android:id="@+id/action_anaFragment_to_urunDetayFragment"
+            app:destination="@id/urunDetayFragment" />
+        <action
+            android:id="@+id/action_anaFragment_to_urunFragment2"
+            app:destination="@id/urunFragment2" />
+        <action
+            android:id="@+id/action_anaFragment_to_kategoriFragment"
+            app:destination="@id/kategoriFragment" />
+        <action
+            android:id="@+id/action_anaFragment_to_favorilerFragment"
+            app:destination="@id/favorilerFragment" />
+        <action
+            android:id="@+id/action_anaFragment_to_sepetFragment"
+            app:destination="@id/sepetFragment" />
+        <action
+            android:id="@+id/action_anaFragment_to_profilFragment"
+            app:destination="@id/profilFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favorilerFragment"
+        android:name="com.example.eticaretuyg.FavorilerFragment"
+        android:label="fragment_favoriler"
+        tools:layout="@layout/fragment_favoriler" >
+        <action
+            android:id="@+id/action_favorilerFragment_to_urunDetayFragment"
+            app:destination="@id/urunDetayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profilFragment"
+        android:name="com.example.eticaretuyg.ProfilFragment"
+        android:label="fragment_profil"
+        tools:layout="@layout/fragment_profil" />
+    <fragment
+        android:id="@+id/sepetFragment"
+        android:name="com.example.eticaretuyg.SepetFragment"
+        android:label="fragment_sepet"
+        tools:layout="@layout/fragment_sepet" >
+        <action
+            android:id="@+id/action_sepetFragment_to_odemeFragment"
+            app:destination="@id/odemeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/urunDetayFragment"
+        android:name="com.example.eticaretuyg.UrunDetayFragment"
+        android:label="UrunDetayFragment" >
+    <argument
+        android:name="urun"
+        app:argType="com.example.eticaretuyg.UrunModel"
+        app:nullable="false"/>
+    </fragment>
+    <fragment
+        android:id="@+id/urunFragment2"
+        android:name="com.example.eticaretuyg.UrunFragment"
+        android:label="UrunFragment" >
+        <argument
+            android:name="urunList"
+            app:argType="com.example.eticaretuyg.UrunModel[]"/>
+        <action
+            android:id="@+id/action_urunFragment2_to_urunDetayFragment"
+            app:destination="@id/urunDetayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/odemeFragment"
+        android:name="com.example.eticaretuyg.OdemeFragment"
+        android:label="OdemeFragment" />
+</navigation>

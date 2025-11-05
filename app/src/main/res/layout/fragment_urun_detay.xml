@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageViewUrunDetayResim"
+            android:layout_width="match_parent"
+            android:layout_height="437dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/textViewUrunDetayIsim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/textViewUrunDetayFiyat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#FF5722"
+            android:layout_marginTop="8dp"/>
+
+        <ImageButton
+            android:id="@+id/favoriButtonDetay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/bosfavorite" />
+
+        <Button
+            android:id="@+id/buttonSepeteEkleDetay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/black"
+            android:text="Sepete Ekle"
+            android:textColor="@android:color/white" />
+
+
+    </LinearLayout>
+</ScrollView>

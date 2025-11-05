@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Profil Fotoğrafı -->
+        <ImageView
+            android:id="@+id/imageViewProfil"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_profile"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="Profil Fotoğrafı"
+            android:scaleType="centerCrop"
+            android:background="@drawable/circle_background" />
+
+        <!-- İsim -->
+        <TextView
+            android:id="@+id/textViewIsim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ad Soyad"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Mail -->
+        <TextView
+            android:id="@+id/textViewMail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="kullanici@mail.com"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Telefon -->
+        <TextView
+            android:id="@+id/textViewTelefon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+90 500 000 00 00"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Adres -->
+        <TextView
+            android:id="@+id/textViewAdres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adres bilgisi burada gözükecek"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+    </LinearLayout>
+</ScrollView>

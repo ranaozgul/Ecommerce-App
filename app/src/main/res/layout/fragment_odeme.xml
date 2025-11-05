@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/editTextKartNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Kart Numarası"
+            android:inputType="number"
+            android:maxLength="16"
+            android:layout_marginBottom="12dp"/>
+
+        <EditText
+            android:id="@+id/editTextKartIsim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Kart Üzerindeki İsim"
+            android:inputType="textCapWords"
+            android:layout_marginBottom="12dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editTextSonKullanma"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="AA/YY"
+                android:inputType="number"/>
+
+            <EditText
+                android:id="@+id/editTextCVV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:hint="CVV"
+                android:inputType="numberPassword"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonOdemeYap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ödeme Yap"
+            android:backgroundTint="@color/black"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
+
+</ScrollView>
